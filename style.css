@@ -1,0 +1,338 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+body{
+    font-family: "Quicksand", sans-serif;
+    background-color: #E7F7FF;
+    padding: 2rem;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+/* top-section */
+.top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* clouds */
+.left-cloud {
+    position: absolute;
+    left: -75px;
+    top: 0;
+    z-index: 0;
+}
+.right-cloud {
+    position: absolute;
+    right: -72px;
+    bottom: -20px;
+    z-index: 0;
+}
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0px;
+    position: relative;
+    z-index: 10;
+}
+.logo .logo-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+/* greetings */
+.greetings .greetings-title{
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #222222;
+}
+.greetings .greetings-subtitle{
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+/* main section */
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+.main-section .verify-span{
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 500;
+}
+.main-section .click-span{
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 500;
+}
+.main-section .link-main-section{
+    font-size: 1rem;
+    color: #2230F6;
+    font-weight: 500;
+}
+.main-section .btn-main-section{
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
+    background-color: #039EE9;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* divider */
+.divider-container {
+    padding: 2rem;
+}
+
+.divider {
+    height: 1px;
+    width: 7.813rem;
+    background-color: #c2c2c2;
+    margin-top: 3.125rem;
+}
+.divider-finish {
+    height: 1px;
+    width: 100%;
+    background-color: #c2c2c2;
+}
+
+/* jadwal */
+.jadwal{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.jadwal .jadwal-title{
+    color: #222222;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.box-jadwal{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: #ececec solid 1px;
+}
+
+.box-jadwal .span-date{
+    color: #222222;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.box-jadwal .span-platform{
+    color: #535353;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* bukti pembayaran */
+.bukti-pembayaran{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+}
+@media (max-width: 425px){
+    .bukti-pembayaran{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+}
+.bukti-pembayaran .bukti-pembayaran-title{
+    color: #222222;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-header{
+    border-bottom: #ebebeb solid 2px;  
+}
+tbody .table-body {
+    border-bottom: #ebebeb solid 2px;
+}
+.grand-total{
+    text-align: end;
+    padding: 1.125rem 1.25rem;
+    border-bottom: #ebebeb solid 2px;
+    border-top: #ebebeb solid 2px;
+}
+.grand-total-number{
+    text-align: end;
+    padding: 1.875rem 1.25rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #222222
+}
+.nama-produk{
+    text-align: left;
+    width: 50%;
+    padding: 1.125rem 1.25rem;
+}
+.nama-produk-content{
+    padding: 1.125rem 1.25rem;
+    font-size: 0.875rem;
+    color: #535353;
+    font-weight: 500;
+}
+.biaya{
+    width: 16%;
+    text-align: center;
+    padding: 1.125rem 1.25rem;
+}
+.biaya-content{
+    font-size: 0.875rem;
+    color: #535353;
+    font-weight: 500;
+    text-align: center;
+}
+.jumlah{
+    width: 16%;
+    text-align: center;
+    padding: 1.125rem 1.25rem;
+}
+.jumlah-content{
+    font-size: 0.875rem;
+    color: #535353;
+    font-weight: 500;
+    text-align: center;
+}
+.subtotal{
+    width: 16%;
+    text-align: center;
+    padding: 1.125rem 1.25rem;
+}
+.subtotal-content{
+    font-size: 0.875rem;
+    color: #535353;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* catatan */
+.catatan{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.catatan .span-title{
+    color: #535353;
+    font-size: 0.875rem;
+}
+.catatan .span-desc{
+    color: #535353;
+    font-size: 0.875rem;
+}
+.catatan .span-catatan-admin{
+    color: #2230F6;
+    font-size: 0.875rem;
+}
+
+/* salam sehat */
+.salam-sehat{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.salam-sehat .salam-sehat-title{
+    color: #333333;
+    font-size: 1rem;
+}
+.salam-sehat .salam-sehat-subtitle{
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* system */
+.span-system{
+    color: #535353;
+    font-size: 0.875rem;
+}
+
+/* our-app */
+.our-app {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.our-app .span-app {
+    font-size: 1rem;
+    color: #535353;
+    font-weight: 500;
+}
+.our-app .download-app-btn{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0px;
+}
+.our-app .download-app-btn a{
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .our-app .download-app-btn{
+        display: flex;
+        flex-direction: column;
+        justify-items: start;
+        align-items: start;
+        gap: 1.5rem;
+        margin: 0px;
+    }
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+.footer .icons{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px;
+}
+.copyright .span-copyright{
+    color: #737373;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
